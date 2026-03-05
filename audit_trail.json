@@ -1,0 +1,105 @@
+[
+  {
+    "timestamp": "2026-03-02T21:22:18.652171+00:00",
+    "event_type": "WEIGHT_SUBMITTED",
+    "node_id": 1,
+    "details": {
+      "regime": "Pre-Volatility Baseline",
+      "trust": 1.0,
+      "block": 1,
+      "cpu": 1.5793,
+      "lookback_days": 3,
+      "prox_term": 0.0
+    }
+  },
+  {
+    "timestamp": "2026-03-02T21:22:22.726306+00:00",
+    "event_type": "NODE_METRICS",
+    "node_id": 1,
+    "details": {
+      "regime": "Pre-Volatility Baseline",
+      "lookback_days": 3,
+      "r2_train": 0.999998,
+      "r2_test": 0.997968,
+      "mape_test": 0.0996,
+      "da_train": 99.6564,
+      "da_test": 98.6667,
+      "r2_gap": 0.00203,
+      "overfit": false
+    }
+  },
+  {
+    "timestamp": "2026-03-02T21:22:29.059995+00:00",
+    "event_type": "WEIGHT_SUBMITTED",
+    "node_id": 2,
+    "details": {
+      "regime": "COVID-19 Crisis Regime",
+      "trust": 1.0,
+      "block": 2,
+      "cpu": 1.2474,
+      "lookback_days": 3,
+      "prox_term": 0.0
+    }
+  },
+  {
+    "timestamp": "2026-03-02T21:22:31.945185+00:00",
+    "event_type": "NODE_METRICS",
+    "node_id": 2,
+    "details": {
+      "regime": "COVID-19 Crisis Regime",
+      "lookback_days": 3,
+      "r2_train": 0.999996,
+      "r2_test": 0.993599,
+      "mape_test": 0.1099,
+      "da_train": 99.1409,
+      "da_test": 98.6755,
+      "r2_gap": 0.006398,
+      "overfit": false
+    }
+  },
+  {
+    "timestamp": "2026-03-02T21:22:41.294341+00:00",
+    "event_type": "WEIGHT_SUBMITTED",
+    "node_id": 3,
+    "details": {
+      "regime": "Post-COVID Rate-Hike Regime",
+      "trust": 1.0,
+      "block": 3,
+      "cpu": 1.591,
+      "lookback_days": 3,
+      "prox_term": 0.0
+    }
+  },
+  {
+    "timestamp": "2026-03-02T21:22:46.440783+00:00",
+    "event_type": "NODE_METRICS",
+    "node_id": 3,
+    "details": {
+      "regime": "Post-COVID Rate-Hike Regime",
+      "lookback_days": 3,
+      "r2_train": 0.999993,
+      "r2_test": 0.999041,
+      "mape_test": 0.0952,
+      "da_train": 99.3103,
+      "da_test": 100.0,
+      "r2_gap": 0.000952,
+      "overfit": false
+    }
+  },
+  {
+    "timestamp": "2026-03-02T21:22:46.473660+00:00",
+    "event_type": "AGGREGATION",
+    "node_id": "GLOBAL",
+    "details": {
+      "method": "combined_size_r2_fedavg",
+      "nodes": 3,
+      "rejected": [],
+      "selected_lookbacks": [
+        3,
+        3,
+        3
+      ],
+      "poisoning_risk": 0.4109
+    }
+  }
+]
